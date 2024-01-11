@@ -1,0 +1,20 @@
+h1{
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+    background-color: beige;
+    text-shadow: 3px 3px 3px #ababab;
+    display: block;
+    border: 3px solid red;
+    border-radius: 10px;
+}
+p{
+    line-height: 2;
+    text-align: justify;
+}
+.font1{
+    font-family:"Audiowide";
+}
+.font2{
+    font-family: "sofia";
+}
