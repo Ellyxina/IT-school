@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sesiunea 5</title>
+    <style>
+      div p /* Descendant selector = Toate elementele p care sunt copii ai unui element div */ {
+        color: red;
+      }
+      div > p /* Child selector = Toate elementele p care sunt copii directi ai unui element div */ {
+        background-color: bisque;
+      }
+      div + p /* Adjacent sibling selector = The adjacent sibling selector is used to select an element that is directly after another specific element. = Toate elementele p care sunt direct dupa un element div */ {
+        font-size: 30px;
+      }
+      div ~ p /* General sibling selector = The general sibling selector selects all elements that are next siblings of a specified element. = Toate elementele p care sunt la acelasi nivel dupa un element div */ {
+        font-weight: 900;
+      }
+      a {
+        font-size: 42px;
+      }
+    </style>
+  </head>
+  <body>
+    <a href="pseudo.html">Pseudo</a>
+    <a href="flex.html">Flex</a>
+    <h1>CSS Combinators</h1>
+    <div>
+      <p>Paragraf 1</p>
+      <p>Paragraf 2</p>
+    </div>
+    <p>Paragraf 3</p>
+    <div>
+      <p>Paragraf 4</p>
+      <div><p>Paragraf 5</p></div>
+      <p>Paragraf 6</p>
+      <section>
+        <p>Paragraf 7</p>
+        <!-- P7 is descendent of a div but not a direct child so it is affected by the red color but not by the background color-->
+      </section>
+    </div>
+    <p>Paragraf 8</p>
+    <p>Paragraf 9</p>
+  </body>
+</html>

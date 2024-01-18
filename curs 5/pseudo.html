@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pseudo</title>
+    <style>
+      a.deosebit:hover {
+        color: red;
+      }
+      a.click:active {
+        color: chartreuse;
+      }
+      a.went:visited {
+        color: darkcyan;
+      }
+      p::first-letter {
+        color: red;
+        font-size: 40px;
+      }
+      a[target="_blank"] {
+        background-color: blueviolet;
+      }
+      [alt~="flower"] {
+        border: 2px solid red;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Pseudo clase</h1>
+    <a class="deosebit" href="Combinators.html">Index</a>
+    <a class="click" href="Combinators.html">Index</a>
+    <a class="went" href="Combinators.html">Index</a>
+    <h1>Pseudo elemente</h1>
+    <p>This is a paragraph</p>
+    <h1>Attr</h1>
+    <a href="flex.html" target="_blank">Flex</a>
+    <img src="" alt="flower" />
+  </body>
+</html>
